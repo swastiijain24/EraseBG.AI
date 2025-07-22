@@ -6,8 +6,7 @@ const connectDB = async ()=>{
         console.log('database connected')
     })
     await mongoose.connect(`${process.env.MONGO_URI}/EraseBG_AI` , {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+  
   ssl: true
 })
 }
