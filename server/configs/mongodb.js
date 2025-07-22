@@ -5,7 +5,11 @@ const connectDB = async ()=>{
     mongoose.connection.on('connected', ()=>{
         console.log('database connected')
     })
-    await mongoose.connect(`${process.env.MONGO_URI}/EraseBG_AI`)
+    await mongoose.connect(`${process.env.MONGO_URI}/EraseBG_AI` , {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+  ssl: true
+})
 }
 
 export default connectDB ;
