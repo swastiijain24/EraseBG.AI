@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 import { Link, useNavigate } from 'react-router-dom'
 import { useClerk, UserButton, useUser } from '@clerk/clerk-react'
 import { useContext } from 'react'
-import { AppContext } from '../context/appContext'
+import { AppContext } from '../context/AppContext.jsx'
 import { useEffect } from 'react'
 
 const Navbar = () => {
